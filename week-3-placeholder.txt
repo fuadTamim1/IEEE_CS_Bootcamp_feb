@@ -1,0 +1,5 @@
+# Week 3 Content Coming Soon
+
+This branch contains the Web Fundamentals content.
+
+Content will be unlocked after Week 2 completion.
