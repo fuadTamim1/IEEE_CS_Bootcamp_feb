@@ -1,0 +1,5 @@
+# Week 2 Content Coming Soon
+
+This branch contains the Linux and Cybersecurity fundamentals content.
+
+Content will be unlocked after Week 1 completion.
