@@ -24,7 +24,34 @@ A comprehensive month-long bootcamp exposing members to the three foundational p
 
 ---
 
-## 📅 Program Cadence
+## � Quick Start for Students
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/fuadTamim1/IEEE_CS_Bootcamp_feb.git
+cd IEEE_CS_Bootcamp_feb
+```
+
+### Step 2: Check Your Week's Branch
+```bash
+git branch -a                  # See all available weeks
+```
+
+### Step 3: Switch to Your Week (Example: Week 1)
+```bash
+git checkout week-1
+```
+
+### Step 4: Start Learning!
+```bash
+python lessons/Day_1/01_print_variables.py
+```
+
+📖 **See [GETTING_STARTED.md](GETTING_STARTED.md) for detailed student guide**
+
+---
+
+## �📅 Program Cadence
 - **One topic per week**
 - **One challenge per week**
 - **One weekly recognition**
