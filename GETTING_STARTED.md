@@ -86,7 +86,7 @@ The branch with an asterisk (*) is your current location.
 ## 🆘 Need Help?
 
 If you're stuck on git commands:
-1. Ask in the class Slack/Discord
+1. Ask in the class Discord
 2. Contact an instructor
 3. Check the resources folder in your branch for guides
 
