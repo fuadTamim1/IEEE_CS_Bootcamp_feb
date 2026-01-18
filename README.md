@@ -14,7 +14,6 @@ A comprehensive month-long bootcamp exposing members to the three foundational p
 ### 🎯 Primary Objectives
 - Expose members to three foundational pillars of modern software engineering
 - Evaluate consistency, engagement, and problem-solving ability
-- Filter out inactive participants
 - Build strong technical foundation for progression to advanced tracks
 
 ### 📚 Three Foundational Pillars

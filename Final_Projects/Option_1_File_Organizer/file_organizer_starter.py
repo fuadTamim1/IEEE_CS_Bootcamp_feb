@@ -49,31 +49,17 @@ def organize_files(directory):
         folder_path = os.path.join(directory, folder_name)
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
-            print(f"📁 Created folder: {folder_name}")
+            print(f"Created folder: {folder_name}")
         
         # Move file to the folder
         new_file_path = os.path.join(folder_path, file)
         os.rename(file_path, new_file_path)
-        print(f"📄 Moved: {file} → {folder_name}/")
+        print(f"Moved: {file} → {folder_name}/")
 
 
 if __name__ == "__main__":
-    # Example usage - change path as needed
-    test_directory = "./test_files"
-    
-    # Create test files (optional)
-    if not os.path.exists(test_directory):
-        os.makedirs(test_directory)
-        
-        # Create sample files
-        sample_files = ["doc1.txt", "image1.jpg", "report.pdf", "data.csv"]
-        for file in sample_files:
-            open(os.path.join(test_directory, file), "w").close()
-        print("✅ Sample files created!\n")
-    
-    print("🚀 Starting file organization...\n")
+    test_directory = "./test"
     organize_files(test_directory)
-    print("\n✅ File organization complete!")
 
 
 # NEXT STEPS TO EXTEND THIS PROJECT:
