@@ -18,6 +18,7 @@ Starter Code - Build upon this!
 
 import json
 import random
+from datetime import datetime
 
 # Knowledge base - extend this!
 RESPONSES = {
@@ -31,13 +32,17 @@ RESPONSES = {
         "Excellent! Ready to help!"
     ],
     "help": [
-        "I can help with:\n- Greetings (say 'hello')\n- Status (say 'how are you')\n- Exit (say 'bye')",
+        "I can help with:\n- Greetings (say 'hello')\n- Status (say 'how are you')\n- Time (say 'what time')\n- Exit (say 'bye')",
         "What do you need help with?"
     ],
     "bye": [
         "Goodbye! 👋",
         "See you later!",
         "Thanks for chatting!"
+    ],
+    "time": [
+        "Let me check the current time for you!",
+        "Sure! Let me get the time!"
     ]
 }
 
@@ -46,6 +51,17 @@ FALLBACK_RESPONSES = [
     "Interesting! I'm still learning. Try: hello, how are you, help, bye",
     "Hmm, I didn't catch that. Try asking something else!"
 ]
+
+
+def get_current_time():
+    """
+    Get the current time in a friendly format.
+    
+    Returns:
+        String with formatted time
+    """
+    now = datetime.now()
+    return now.strftime("%I:%M %p")  # Format: 02:30 PM
 
 
 def get_response(user_input):
@@ -81,6 +97,12 @@ def chatbot():
         user_input = input("You: ").strip()
         
         if not user_input:
+            continue
+        
+        # Check for time-related queries
+        if any(word in user_input.lower() for word in ["time", "what time", "current time", "clock"]):
+            current_time = get_current_time()
+            print(f"Bot: The current time is {current_time} ⏰\n")
             continue
         
         if user_input.lower() == "bye":

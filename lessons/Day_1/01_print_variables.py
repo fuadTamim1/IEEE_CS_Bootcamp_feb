@@ -33,7 +33,7 @@ decimal = 3.14
 text = "Python"
 is_active = True
 
-print(f"\nInteger: {num}")
+print(f"Integer: {num}")
 print(f"Float: {decimal}")
 print(f"String: {text}")
 print(f"Boolean: {is_active}")
