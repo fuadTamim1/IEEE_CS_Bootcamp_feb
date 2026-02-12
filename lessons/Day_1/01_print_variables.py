@@ -27,7 +27,7 @@ print(f"\nMy name is {name}")
 print(f"I am {age} years old")
 print(f"I live in {city}")
 
-# Data types
+# Data typesa
 num = 10
 decimal = 3.14
 text = "Python"

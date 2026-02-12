@@ -9,7 +9,6 @@ Learning Objectives:
 """
 
 print("=== LOOPS ===\n")
-
 # For loop with range
 print("For loop from 1 to 5:")
 for i in range(1, 6):
